@@ -1,7 +1,7 @@
 AutohotKey-Scripts
 ==================
 
-This repository contains the scripts I use for AutoHotKeys.
+This repository contains the scripts I use for AutoHotKey.
 
 Evernote Templates
 ------------------
