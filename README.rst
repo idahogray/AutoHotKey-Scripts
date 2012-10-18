@@ -25,4 +25,5 @@ Requirements
 * AutoHotKeys
 * Python
 * Green Sheet Template note stored in "My Documents\EvernoteTemplates" as GreenSheetTemplate.enex
+  
   - Must remove the <created></created> and <updated></updated> tags (plus their contents) or the note will have the templates creation date
