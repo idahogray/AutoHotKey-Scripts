@@ -11,6 +11,11 @@ The template note is for Green Sheet meetings at work.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Green Sheet Evernote Template
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============
+Prerequisites
+=============
+* Export a template note from Evernote as an enex file
+* Change the variables at the top of the script to appropriate values
 
 =====
 Usage
