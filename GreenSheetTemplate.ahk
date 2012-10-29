@@ -1,2 +1,2 @@
 SetWorkingDir %A_ScriptDir%
-#t::Run pythonw GreenSheetTemplate.pyw
+#t::Run python TemplateChooser.pyw
