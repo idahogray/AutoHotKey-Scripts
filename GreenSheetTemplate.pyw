@@ -15,14 +15,14 @@ my_name = r'Keith Gray'
 # Render the Template
 env = Environment(loader=FileSystemLoader(os.path.split(template_file)[0]))
 template = env.get_template(os.path.split(template_file)[1])
-project_number = raw_input('Project Number: ')
-project_name = raw_input('Project Name: ')
-attendee_2 = raw_input('Attendee #2: ')
-attendee_3 = raw_input('Attendee #3: ')
-attendee_4 = raw_input('Attendee #4: ')
-attendee_5 = raw_input('Attendee #5: ')
-attendee_6 = raw_input('Attendee #6: ')
-attendee_7 = raw_input('Attendee #7: ')
+project_number = input('Project Number: ')
+project_name = input('Project Name: ')
+attendee_2 = input('Attendee #2: ')
+attendee_3 = input('Attendee #3: ')
+attendee_4 = input('Attendee #4: ')
+attendee_5 = input('Attendee #5: ')
+attendee_6 = input('Attendee #6: ')
+attendee_7 = input('Attendee #7: ')
 
 temporary_file = tempfile.NamedTemporaryFile(delete=False)
 
@@ -33,7 +33,7 @@ rendered_template = template.render(date=date.today(), project_number=project_nu
         Attendee_6 = attendee_6, Attendee_7 = attendee_7)
 
 # Write the Rendered Template to a Temporary File
-temporary_file.write(rendered_template)
+temporary_file.write(bytes(rendered_template, 'UTF-8'))
 temporary_file.close()
 
 # Call the ENScript and Load the Temporary File with the Rendered Template Data
