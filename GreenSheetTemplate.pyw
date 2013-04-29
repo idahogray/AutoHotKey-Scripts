@@ -9,7 +9,7 @@ from jinja2 import Environment, FileSystemLoader
 evernote_exe_location = r"C:\Program Files (x86)\Evernote\Evernote"
 evernote_database = os.path.join(os.path.expanduser(r"~\AppData\Local\Evernote\Evernote\Databases"), r"idahogray.exb")
 template_file = os.path.join(os.path.expanduser(r"~\Documents\EvernoteTemplates"), r"GreenSheetTemplate.enex")
-evernote_notebook = r"Inbox"
+evernote_notebook = r"Archive"
 my_name = r'Keith Gray'
 
 # Render the Template
