@@ -9,3 +9,28 @@ SetWorkingDir %A_ScriptDir%
 #h::
 Send hasattachment:yes from:
 return
+
+; Shortcut for sending CID files
+#C::
+Send {Tab}FTPUSER{Tab}TAIL{Tab}{Tab}{Enter}
+return
+
+; Shortcut for changing the Local Area Connection IP Address
+#i::Run python ChangeIP.py
+
+; Shortcut for downloading budget reports
+#b::Run python C:\Users\kgray\Documents\Software\budget-downloader\budget_downloader\budget_downloader.py
+
+; Text expansion
+::Kieth::Keith
+
+::@home::
+(
+4228 Millers Ridge
+St. Charles, MO 63304
+)
+
+; Toggle speaker mute with Win+S because my office keyboard doesn't have multimedia keys
+#s:: Send {Volume_Mute}
+#PgUp:: Send {Volume_Up 3}
+#PgDn:: Send {Volume_Down 3}

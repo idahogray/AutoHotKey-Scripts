@@ -4,7 +4,7 @@ print("3. Project Kickoff Note")
 choice = None
 
 while choice not in ['1', '2', '3']:
-    choice = input("Enter Choice: ").strip()
+    choice = raw_input("Enter Choice: ").strip()
 
 if choice == '1':
     import DailyNoteTemplate
