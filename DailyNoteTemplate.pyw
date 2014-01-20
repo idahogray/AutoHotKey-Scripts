@@ -21,7 +21,7 @@ temporary_file = tempfile.NamedTemporaryFile(delete=False)
 rendered_template = template.render(current_date=date.today())
 
 # Write the Rendered Template to a Temporary File
-temporary_file.write(bytes(rendered_template, 'UTF-8'))
+temporary_file.write(rendered_template)
 temporary_file.close()
 
 # Call the ENScript and Load the Temporary File with the Rendered Template Data
